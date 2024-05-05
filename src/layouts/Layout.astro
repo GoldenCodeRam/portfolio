@@ -1,0 +1,43 @@
+---
+interface Props {
+	title: string;
+}
+
+import '@fortawesome/fontawesome-free/css/all.min.css'
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+	* {
+		font-family: "Nunito", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	html, body {
+		height: 100%;
+		width: 100%;
+	}
+
+	html, body, main {
+		scroll-snap-type: y mandatory;
+	}
+</style>
