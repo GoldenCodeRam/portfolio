@@ -1,24 +1,25 @@
-<script>
+<script lang="ts">
     import { onMount } from "svelte";
     import RamComputer from "./RamComputer.svelte";
     import { fade, slide } from "svelte/transition";
     import { quintOut } from "svelte/easing";
 
-    let showInfo = true;
+    let showInfo = false;
     onMount(() => {
         console.log(window.innerWidth);
         setTimeout(() => {
             showInfo = true;
-        }, 4000);
+        }, 3500);
     });
 </script>
 
-<div class="flex flex-col lg:flex-row items-center p-6">
+<div class="flex flex-col lg:flex-row items-center h-full">
     <div class="w-[15em] xs:w-[20em] sm:w-[30em] xl:w-[40em] shrink-0">
         <RamComputer />
     </div>
     {#if showInfo}
         <div
+            class="block overflow-hidden"
             transition:slide={{
                 duration: 1000,
                 easing: quintOut,
@@ -27,7 +28,7 @@
         >
             <div
                 transition:fade={{ delay: 1000 }}
-                class="h-full flex flex-col justify-center text-white text-center"
+                class="h-full max-h-screen flex flex-col justify-center text-white text-center overflow-hidden"
             >
                 <h1 class="text-4xl sm:text-6xl text-white font-bold">
                     Welcome to my Portfolio!
@@ -46,28 +47,44 @@
                 <div class="mt-12">
                     <p class="text-xl">Few things so you can profile me:</p>
 
-                    <div class="grid gap-3 mt-4 grid-cols-1 max-w-sm mx-auto">
+                    <div class="flex gap-3 mt-4 max-w-sm mx-auto">
                         <div
-                            class="flex bg-slate-900 text-xl items-center justify-center gap-3 border-2 border-white rounded-md py-2"
+                            class="relative flex justify-center items-center h-32 w-32 text-black rounded-md overflow-hidden border-2"
                         >
                             <img
-                                class="w-12"
-                                src="co-flag.svg"
-                                alt="Colombian Flag"
+                                src="co_flag.svg"
+                                alt="Silly cat"
+                                class="absolute h-full w-full object-cover opacity-50"
                             />
-                            I'm from Colombia
+                            <p class="z-10 text-white font-bold text-xl">
+                                I'm from Colombia
+                            </p>
                         </div>
+
                         <div
-                            class="flex bg-slate-900 text-xl items-center justify-center gap-3 border-2 border-white rounded-md py-2"
+                            class="relative flex justify-center items-center h-32 w-32 text-black rounded-md overflow-hidden border-2 px-1"
                         >
-                            <i class="fa-solid fa-code text-4xl w-12"></i>
-                            I love to code
+                            <img
+                                src="code_pattern.svg"
+                                alt="Silly cat"
+                                class="absolute h-full w-full object-cover opacity-50"
+                            />
+                            <p class="z-10 text-white font-bold text-xl">
+                                I love code
+                            </p>
                         </div>
+
                         <div
-                            class="flex bg-slate-900 text-xl items-center justify-center gap-3 border-2 border-white rounded-md py-2"
+                            class="relative flex justify-center items-center h-32 w-32 text-black rounded-md overflow-hidden border-2"
                         >
-                            <img class="w-12" src="cat.svg" alt="Cat Emoji" />
-                            I love cats!
+                            <img
+                                src="silly_cat.jpg"
+                                alt="Silly cat"
+                                class="absolute h-full w-full object-cover opacity-50"
+                            />
+                            <p class="z-10 text-white font-bold text-xl mt-10">
+                                I love cats!
+                            </p>
                         </div>
                     </div>
                 </div>

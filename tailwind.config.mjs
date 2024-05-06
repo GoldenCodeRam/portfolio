@@ -42,7 +42,6 @@ export default {
           "90%": { opacity: 0.50 },
           "100%": { opacity: 1 },
         },
-        "bulb-out": {},
       },
     },
   },

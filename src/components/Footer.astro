@@ -1,0 +1,54 @@
+---
+import { Image } from "astro:assets";
+---
+
+<footer class="bg-slate-950 p-5 border-t-2 border-t-slate-700">
+	<h1 class="text-slate-300 font-bold text-2xl text-center">
+		Golden Code Ram
+	</h1>
+	<h2 class="text-slate-400 text-center">
+		Made with lots of love +
+		<a
+			target="_blank"
+			class="inline-flex items-center justify-center gap-1 underline"
+			href="https://astro.build/"
+		>
+			Astro
+			<Image
+				class="inline"
+				src="https://astro.build/assets/press/astro-icon-light-gradient.svg"
+				width="12"
+				height="12"
+				alt="Astro Logo"
+			/>
+		</a> +
+		<a
+			target="_blank"
+			class="inline-flex items-center justify-center gap-1 underline"
+			href="https://svelte.dev/"
+		>
+			Svelte
+			<Image
+				class="inline"
+				src="https://raw.githubusercontent.com/sveltejs/branding/master/svelte-logo.svg"
+				width="14"
+				height="14"
+				alt="Svelte Logo"
+			/>
+		</a> +
+		<a
+			target="_blank"
+			class="inline-flex items-center justify-center gap-1 underline"
+			href="https://tailwindcss.com/"
+		>
+			Tailwind
+			<Image
+				class="inline"
+				src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
+				width="14"
+				height="14"
+				alt="Tailwind Logo"
+			/>
+		</a>.
+	</h2>
+</footer>
