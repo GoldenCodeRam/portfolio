@@ -4,7 +4,7 @@
     import { fade, slide } from "svelte/transition";
     import { quintOut } from "svelte/easing";
 
-    let showInfo = true;
+    let showInfo = false;
     onMount(() => {
         console.log(window.innerWidth);
         setTimeout(() => {
@@ -28,7 +28,7 @@
         >
             <div
                 transition:fade={{ delay: 1000 }}
-                class="h-full max-h-screen flex flex-col justify-center text-white text-center overflow-hidden"
+                class="h-full max-h-screen flex flex-col items-center justify-center text-white text-center overflow-hidden"
             >
                 <h1 class="text-4xl sm:text-6xl text-white font-bold">
                     Welcome to my Portfolio!
