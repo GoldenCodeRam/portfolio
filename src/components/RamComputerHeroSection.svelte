@@ -4,7 +4,7 @@
     import { fade, slide } from "svelte/transition";
     import { quintOut } from "svelte/easing";
 
-    let showInfo = false;
+    let showInfo = true;
     onMount(() => {
         console.log(window.innerWidth);
         setTimeout(() => {
@@ -13,7 +13,7 @@
     });
 </script>
 
-<div class="flex flex-col lg:flex-row items-center h-full">
+<div class="flex flex-col lg:flex-row items-center justify-center h-full">
     <div class="w-[15em] xs:w-[20em] sm:w-[30em] xl:w-[40em] shrink-0">
         <RamComputer />
     </div>
@@ -33,7 +33,7 @@
                 <h1 class="text-4xl sm:text-6xl text-white font-bold">
                     Welcome to my Portfolio!
                 </h1>
-                <p class="mt-6 text-xl sm:text-2xl">
+                <p class="mt-6 text-lg sm:text-2xl">
                     Hi! My name is <a
                         target="_blank"
                         href="https://github.com/GoldenCodeRam"
@@ -45,44 +45,44 @@
                 </p>
 
                 <div class="mt-12">
-                    <p class="text-xl">Few things so you can profile me:</p>
+                    <p class="text-md">Few things so you can profile me:</p>
 
-                    <div class="flex gap-3 mt-4 max-w-sm mx-auto">
+                    <div class="flex gap-3 mt-4 max-w-sm justify-center">
                         <div
-                            class="relative flex justify-center items-center h-32 w-32 text-black rounded-md overflow-hidden border-2"
+                            class="relative flex justify-center items-center h-24 w-24 sm:h-32 sm:w-32 text-black rounded-md overflow-hidden border-2"
                         >
                             <img
                                 src="co_flag.svg"
                                 alt="Silly cat"
                                 class="absolute h-full w-full object-cover opacity-50"
                             />
-                            <p class="z-10 text-white font-bold text-xl">
+                            <p class="z-10 text-white font-bold text-md sm:text-xl">
                                 I'm from Colombia
                             </p>
                         </div>
 
                         <div
-                            class="relative flex justify-center items-center h-32 w-32 text-black rounded-md overflow-hidden border-2 px-1"
+                            class="relative flex justify-center items-center h-24 w-24 sm:h-32 sm:w-32 text-black rounded-md overflow-hidden border-2"
                         >
                             <img
                                 src="code_pattern.svg"
                                 alt="Silly cat"
                                 class="absolute h-full w-full object-cover opacity-50"
                             />
-                            <p class="z-10 text-white font-bold text-xl">
+                            <p class="z-10 text-white font-bold text-md sm:text-xl">
                                 I love code
                             </p>
                         </div>
 
                         <div
-                            class="relative flex justify-center items-center h-32 w-32 text-black rounded-md overflow-hidden border-2"
+                            class="relative flex justify-center items-center h-24 w-24 sm:h-32 sm:w-32 text-black rounded-md overflow-hidden border-2"
                         >
                             <img
                                 src="silly_cat.jpg"
                                 alt="Silly cat"
                                 class="absolute h-full w-full object-cover opacity-50"
                             />
-                            <p class="z-10 text-white font-bold text-xl mt-10">
+                            <p class="z-10 text-white font-bold text-md sm:text-xl">
                                 I love cats!
                             </p>
                         </div>
