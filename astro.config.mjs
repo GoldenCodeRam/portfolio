@@ -6,6 +6,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://goldencoderam.github.io',
-  // base: 'portfolio',
+  base: 'portfolio',
   integrations: [svelte(), tailwind()]
 });
