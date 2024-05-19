@@ -6,8 +6,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://goldencoderam.github.io',
-  // Set the base path with GitHub Pages.
-  base: process.env.name === 'github-pages' ? 'portfolio' : '',
+  base: 'portfolio',
   integrations: [svelte(), tailwind()],
   vite: {
     server: {
