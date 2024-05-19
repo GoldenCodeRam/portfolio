@@ -1,5 +1,9 @@
 <script lang="ts">
     import RamServer from "./RamServer.svelte";
+    
+    import food_badge from "../assets/food_badge.svg";
+    import code_pattern from "../assets/code_pattern.svg";
+    import silly_cat from "../assets/silly_cat.jpg";
 </script>
 
 <div class="flex flex-col lg:flex-row items-center justify-center h-full">
@@ -34,7 +38,7 @@
                         class="relative flex justify-center items-center h-24 w-24 sm:h-32 sm:w-32 text-black rounded-md overflow-hidden border-2"
                     >
                         <img
-                            src="/food_badge.svg"
+                            src={food_badge.src}
                             alt="Food Badge"
                             class="absolute h-full w-full object-cover opacity-50"
                         />
@@ -47,7 +51,7 @@
                         class="relative flex justify-center items-center h-24 w-24 sm:h-32 sm:w-32 text-black rounded-md overflow-hidden border-2"
                     >
                         <img
-                            src="/code_pattern.svg"
+                            src={code_pattern.src}
                             alt="Code Pattern"
                             class="absolute h-full w-full object-cover opacity-50"
                         />
@@ -60,7 +64,7 @@
                         class="relative flex justify-center items-center h-24 w-24 sm:h-32 sm:w-32 text-black rounded-md overflow-hidden border-2"
                     >
                         <img
-                            src="/silly_cat.jpg"
+                            src={silly_cat.src}
                             alt="Silly cat"
                             class="absolute h-full w-full object-cover opacity-50"
                         />

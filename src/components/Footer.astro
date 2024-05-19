@@ -1,5 +1,7 @@
 ---
 import { Image } from "astro:assets";
+
+import ram_colombia from "../assets/ram_colombia.svg";
 ---
 
 <footer class="bg-slate-950 p-5 border-t-2 border-t-slate-700">
@@ -52,7 +54,7 @@ import { Image } from "astro:assets";
 		</a>.
 	</h2>
 	<div class="flex items-center justify-center mt-3">
-		<img class="w-12 h-12 me-2" src="ram_colombia.svg" />
+		<Image src={ram_colombia} width="42" height="42" alt="Ram Colombia" class="me-3" />
 		<h2 class="text-slate-400">I'm from Colombia btw.</h2>
 	</div>
 </footer>
