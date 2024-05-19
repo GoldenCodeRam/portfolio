@@ -34,8 +34,8 @@
                         class="relative flex justify-center items-center h-24 w-24 sm:h-32 sm:w-32 text-black rounded-md overflow-hidden border-2"
                     >
                         <img
-                            src="food_badge.svg"
-                            alt="Silly cat"
+                            src="/food_badge.svg"
+                            alt="Food Badge"
                             class="absolute h-full w-full object-cover opacity-50"
                         />
                         <p class="z-10 text-white font-bold text-md sm:text-xl">
@@ -47,8 +47,8 @@
                         class="relative flex justify-center items-center h-24 w-24 sm:h-32 sm:w-32 text-black rounded-md overflow-hidden border-2"
                     >
                         <img
-                            src="code_pattern.svg"
-                            alt="Silly cat"
+                            src="/code_pattern.svg"
+                            alt="Code Pattern"
                             class="absolute h-full w-full object-cover opacity-50"
                         />
                         <p class="z-10 text-white font-bold text-md sm:text-xl">
@@ -60,7 +60,7 @@
                         class="relative flex justify-center items-center h-24 w-24 sm:h-32 sm:w-32 text-black rounded-md overflow-hidden border-2"
                     >
                         <img
-                            src="silly_cat.jpg"
+                            src="/silly_cat.jpg"
                             alt="Silly cat"
                             class="absolute h-full w-full object-cover opacity-50"
                         />
