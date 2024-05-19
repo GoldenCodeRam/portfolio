@@ -1,0 +1,42 @@
+---
+import RamDisplayCardLeft from '../../components/RamDisplayCardLeft.astro';
+import RamDisplayCardRight from '../../components/RamDisplayCardRight.astro';
+import MyWorkflowsCard from '../../components/MyWorkflowsCard.svelte';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="GoldenCodeRam Portfolio!">
+	<main class="container mx-auto flex-1 px-5 py-12">
+		<h1 class="text-center text-5xl font-bold text-white">My Workflow</h1>
+		<p class="mx-auto max-w-xl py-6 text-white text-center">
+			Here I will document the way I like to do things. This is mostly for myself,
+			to help me remember. But maybe you'll find something interesting here.
+		</p>
+
+		<div class="flex justify-center items-center gap-8">
+			<div class="flex flex-col items-center text-center">
+				<h2 class="text-xl font-bold mb-2 text-white">I'll be most likely running this distro.</h2>
+				<RamDisplayCardLeft link="https://www.debian.org/">
+					<img class="h-full" src="https://www.debian.org/logos/openlogo.svg" />
+				</RamDisplayCardLeft>
+			</div>
+
+			<div class="flex flex-col items-center text-center">
+				<h2 class="text-xl font-bold mb-2 text-white">I'll be using this Text Editor.</h2>
+				<RamDisplayCardRight link="https://neovim.io/">
+					<img class="h-full" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Neovim-mark.svg" />
+				</RamDisplayCardRight>
+			</div>
+		</div>
+
+		<div class="mt-12">
+			<MyWorkflowsCard client:load />
+		</div>
+	</main>
+</Layout>
+
+<style>
+html, body {
+	@apply bg-violet-950;
+}
+</style>

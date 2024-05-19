@@ -3,10 +3,16 @@ import Layout from '../layouts/Layout.astro';
 import RamComputerHeroSection from '../components/RamComputerHeroSection.svelte';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="h-auto bg-slate-950 px-5">
-		<div class="flex items-center justify-center h-screen bg-slate-950">
+<Layout title="GoldenCodeRam Portfolio!">
+	<main class="container mx-auto h-auto px-5">
+		<div class="flex items-center justify-center h-screen">
 			<RamComputerHeroSection client:load />
 		</div>
 	</main>
 </Layout>
+
+<style>
+html, body {
+	@apply bg-violet-950;
+}
+</style>
